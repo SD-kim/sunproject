@@ -5,8 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sustainable diary</title>
+    <style>
+        #container {
+            width : 960px;
+            padding : 20px;
+            margin : 0 auto;
+        }
+        
+        header {
+            padding : 20px;
+            margin-bottom : 20px;
+            text-align : center;
+ 
+        }
+
+        section {
+            width : 620px;
+            padding : 20px;
+            float : left;
+            margin-bottom : 20px;
+        }
+
+        aside {
+            width : 220px;
+            padding : 20px;
+            float : right;
+            margin-bottom : 20px;
+        }
+        footer {
+            clear : both;
+            padding : 20px;
+        }
+
+        div{
+            border : 1px solid #ccc
+        }
+
+    </style>
 </head>
 <body>
+    <!-- 일단은 div 태그로 감싸야 flex 적용이 가능하다 -->
+    <div class="container">
+        <header>
+            <h1>Sustainable Diary</h1>
+            <h3>김선중의 프로그래머 되기 프로젝트</h3>
+            <nav>
+                <a href="">SEON</a>
+                <a href="">Programming</a>
+                <a href="">Project</a>
+                <a href="">Tennis</a>
+                <a href="">Swim</a>
+                <a href="">Foods</a>
+            </nav>
+        </header>
+        
+        <div>
+            <!-- main section -->
+            <section class = "contents">
+                <div>
+                    <div>
+                        <h2>first article</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempore velit. Mollitia totam cupiditate molestias sed assumenda expedita, blanditiis, quibusdam nobis perspiciatis ipsam fugiat. Autem odio veniam accusamus porro rem.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>second article</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempore velit. Mollitia totam cupiditate molestias sed assumenda expedita, blanditiis, quibusdam nobis perspiciatis ipsam fugiat. Autem odio veniam accusamus porro rem.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- right side section -->
+            <aside class = "sidebar">
+                <div>
+                    <b>CONTACT</b>
+                    <br>
+                    김선중 / Seon Kim
+                    <br>
+                    moleskindiary@gmail.com
+                    <br>
+                    <a href="https://sustainablediary.com">sustainablediary.com</a>
     
+                    <br><br>
+    
+                    <b>INSTAGRAM</b>
+                    <br>    
+                    <div id="instagram-embed">
+                        <img alt="instagram-image" id="img1" width=100%>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+
+        <!-- footer -->
+        <div>
+            <footer>
+                Sustainable diary
+                <br>
+                2017 ~
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
