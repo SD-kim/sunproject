@@ -1,0 +1,67 @@
+
+#container {
+    width : 960px;
+    padding : 10px;
+    margin : 0 auto;
+}
+
+header {
+    padding : 20px;
+    margin-bottom : 0px;
+    text-align : center;
+}
+
+/* 해야할 것 : nav에 flex 적용하기 */
+
+nav{
+    text-align: center;
+    padding: 20px;
+    background-color: #bbecd3;
+}
+
+nav > a {
+    padding: 0.6em 0.8em;
+    margin : 5px;
+    background-color: rgba(30,130,76,1);
+    color: white;
+    /* 폰트 지정 */
+    font-size: 1em;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.nav-flex-container {
+    display : flex;
+    justify-content: center;
+    flex-wrap : wrap;
+    overflow : auto;
+}
+
+div .contents {
+    display : grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap : 1em;
+    grid-row-gap : 1em;
+}
+
+div .contents > section {
+    padding: 1em;
+    background-color: rgb(175, 214, 230);
+}
+
+div .contents > aside {
+    background-color : yellow;
+    padding : 1em;
+}
+
+footer {
+    text-align : center;
+    font-size: 1em;
+    padding : 10px;
+    background-color : #bbecd3;
+
+}
+
+/* div{
+    border : 1px solid #ccc
+} */

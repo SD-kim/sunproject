@@ -5,63 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sustainable diary</title>
+    <link rel = "stylesheet" href = "index.css">
     <style>
-        #container {
-            width : 960px;
-            padding : 20px;
-            margin : 0 auto;
-        }
-        
-        header {
-            padding : 20px;
-            margin-bottom : 20px;
-            text-align : center;
- 
-        }
-
-        section {
-            width : 620px;
-            padding : 20px;
-            float : left;
-            margin-bottom : 20px;
-        }
-
-        aside {
-            width : 220px;
-            padding : 20px;
-            float : right;
-            margin-bottom : 20px;
-        }
-        footer {
-            clear : both;
-            padding : 20px;
-        }
-
-        div{
-            border : 1px solid #ccc
-        }
 
     </style>
 </head>
 <body>
     <!-- 일단은 div 태그로 감싸야 flex 적용이 가능하다 -->
     <div class="container">
+        <!-- 헤더 영역 -->
         <header>
             <h1>Sustainable Diary</h1>
             <h3>김선중의 프로그래머 되기 프로젝트</h3>
-            <nav>
-                <a href="">SEON</a>
-                <a href="">Programming</a>
-                <a href="">Project</a>
-                <a href="">Tennis</a>
-                <a href="">Swim</a>
-                <a href="">Foods</a>
+            <nav class = 'nav-flex-container'>
+                <a class = "nav-flex-item" href="">SEON</a>
+                <a class = "nav-flex-item" href="">Programming</a>
+                <a class = "nav-flex-item" href="">Project</a>
+                <a class = "nav-flex-item" href="">Tennis</a>
+                <a class = "nav-flex-item" href="">Swim</a>
+                <a class = "nav-flex-item" href="">Foods</a>
             </nav>
         </header>
-        
-        <div>
-            <!-- main section -->
-            <section class = "contents">
+
+        <!-- 컨텐츠 영역 -->
+        <div class = "contents">
+            <!-- 컨텐츠 - 메인 -->
+            <section>
                 <div>
                     <div>
                         <h2>first article</h2>
@@ -76,7 +45,7 @@
                 </div>
             </section>
             
-            <!-- right side section -->
+            <!-- 컨텐츠 - 우측 사이드바 -->
             <aside class = "sidebar">
                 <div>
                     <b>CONTACT</b>
@@ -97,7 +66,7 @@
                 </div>
 
             </aside>
-        </div>
+        </divclass = "contents">
 
         <!-- footer -->
         <div>
