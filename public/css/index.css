@@ -1,0 +1,65 @@
+/* contents */
+div .contents {
+    /* grid! */
+    display : grid;
+    grid-gap : 1em;
+    grid-template-columns : 70% 30%;
+    margin-top : 1em;
+}
+
+/* header : 네비게이션과 본문 간격을 위한 조치 */
+header {
+    margin-bottom: 20px;
+}
+
+/* main */
+.main {
+    background-color :#ecf0f1;
+}
+    section .article {
+        padding: 1em;
+        background-color : white;
+    }
+    /* grid container - 만들면서 구체화 시킬 것 */
+    section .drawing{
+        display : grid;
+        grid-gap : 1em;
+        grid-template-columns : 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: white;
+        margin-top : 1em;
+        padding : 1em;
+    }
+        .drawing > div {
+            background-color :#ecf0f1;
+            align-self: strech;
+        }
+
+/* side section */
+
+aside {
+    padding : 1em;
+    background-color : white;
+    line-height : 40px;
+}
+    aside b{
+        font-size : 1.5em;
+    }
+
+    #instagram-embed{
+        width : 100%;
+        margin : 1em auto;
+    }
+
+    /* aside div {
+        background-color: white;
+    
+    } */
+
+
+
+
+
+/* div{
+    border : 1px solid #ccc
+} */

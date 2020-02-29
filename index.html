@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sustainable diary</title>
-    <link rel = "stylesheet" href = "index.css">
+    <link rel = "stylesheet" href = "./public/css/index.css">
+    <link rel = "stylesheet" href = "./public/css/common.css">
+
     <style>
 
     </style>
@@ -15,67 +17,75 @@
     <div class="container">
         <!-- 헤더 영역 -->
         <header>
-            <h1>Sustainable Diary</h1>
-            <h3>김선중의 프로그래머 되기 프로젝트</h3>
-            <nav class = 'nav-flex-container'>
-                <a class = "nav-flex-item" href="">SEON</a>
-                <a class = "nav-flex-item" href="">Programming</a>
-                <a class = "nav-flex-item" href="">Project</a>
-                <a class = "nav-flex-item" href="">Tennis</a>
-                <a class = "nav-flex-item" href="">Swim</a>
-                <a class = "nav-flex-item" href="">Foods</a>
+            <div class="logo">
+                <a href="/">SUSTAINABLE DIARY</a>
+                <!-- <a href="/">
+                    <i class="fa fa-bars fa-lg" id = 'hanburger'></i>
+                </a> -->
+            </div>
+            
+            <nav class = 'nav-flex-container active'>
+                <a href="/" class = "active">home</a>
+                <a href="./public/views/profile.html">profile</a>
+                <a href="./public/views/project.html">project</a>
+                <a href="./public/views/gallery.html">gallary</a>
+                <a href="./public/views/diary.html" id = "diary">diary</a>
+                <a href="./public/views/visitor.html">visitor</a>
             </nav>
+        
         </header>
 
-        <!-- 컨텐츠 영역 -->
+        <!-- contents -->
         <div class = "contents">
-            <!-- 컨텐츠 - 메인 -->
-            <section>
-                <div>
+            <!-- contents - main section -->
+            <section class = "main">
+                <div class = "article">
                     <div>
                         <h2>first article</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempore velit. Mollitia totam cupiditate molestias sed assumenda expedita, blanditiis, quibusdam nobis perspiciatis ipsam fugiat. Autem odio veniam accusamus porro rem.</p>
                     </div>
-                </div>
-                <div>
                     <div>
                         <h2>second article</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempore velit. Mollitia totam cupiditate molestias sed assumenda expedita, blanditiis, quibusdam nobis perspiciatis ipsam fugiat. Autem odio veniam accusamus porro rem.</p>
                     </div>
                 </div>
+                
+                <div class="drawing">
+                    <div><img src="./public/imgs/Side-view-of-David-Beckham-Hairstyles.jpg" alt="" width=100%></div>
+                    <div><img src="./public/imgs/20180302_124848.jpg" alt="" width=100%></div>
+                    <div><img src="./public/imgs/602a5d4cdb9ecb2debabd3978066ddbb.jpg" alt="" width=100%></div>
+                    <div><img src="./public/imgs/863b3d44c7fcba46fa03929f93c5499d.png" alt="" width=100%></div>
+                </div>
+
             </section>
             
-            <!-- 컨텐츠 - 우측 사이드바 -->
-            <aside class = "sidebar">
+            <!-- side section -->
+            <aside>
                 <div>
                     <b>CONTACT</b>
                     <br>
-                    김선중 / Seon Kim
+                    <i></i>김선중 / Seon Kim
                     <br>
-                    moleskindiary@gmail.com
-                    <br>
-                    <a href="https://sustainablediary.com">sustainablediary.com</a>
-    
-                    <br><br>
-    
+                    <i></i>moleskindiary@gmail.com
+                    <br><br>   
                     <b>INSTAGRAM</b>
                     <br>    
                     <div id="instagram-embed">
-                        <img alt="instagram-image" id="img1" width=100%>
+                        <img alt="" width=100%>
                     </div>
                 </div>
-
             </aside>
-        </divclass = "contents">
+
+        </div>
 
         <!-- footer -->
-        <div>
-            <footer>
-                Sustainable diary
-                <br>
-                2017 ~
-            </footer>
+        <footer>
+            SUSTAINABLE DIARY&copy;
+            <br>
+            <span id="since">SINCE 2017</span>
+        </footer>
         </div>
     </div>
+    <script src = './public/js/common.js'></script>
 </body>
 </html>

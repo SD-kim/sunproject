@@ -1,0 +1,106 @@
+/* css initialize */
+html, body {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    scroll-behavior: smooth;
+}
+
+/* font face */
+a {
+    color : white;
+}
+header a {
+    font-size : 2em;
+    font-weight: 700;
+    text-decoration : none;
+}
+
+/* container : 전체 배경색상 지정 */
+.container {
+    background-color: #ecf0f1;
+}
+
+div .contents {
+    margin : 1.5em auto;
+    max-width:90%;
+}
+
+/* header - main logo */
+.logo {
+    background-color :white;
+    color : #8e44ad;
+    text-align: center;
+    padding : 1em;
+    /* font-family : Oswald; */
+    font-size : 3em;
+}
+
+.logo a{
+    color : #8e44ad;
+}
+
+/* header - navigation */
+.nav-flex-container {
+    display : flex;
+    justify-content: center;
+    flex-wrap : wrap;
+}
+
+nav{
+    text-align: center;
+    padding: 1em;
+    background-color: #8e44ad;
+}
+
+nav > a {
+    padding: 0.1em 0.5em;
+    margin : 1em;
+
+    /* font settings */
+    color: white;
+    font-family : 'Noto Sans KR', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing : 1px;
+}
+
+nav a:visited {
+    color : #ecf0f1;
+    font-style : normal;
+}
+
+nav a:hover{
+    color : #95a5a6;
+}
+
+a .active:visited {
+    color : #ecf0f1;
+}
+
+/* 설명이 필요한 부분 */
+.active{
+    font-weight : 900;
+}
+
+.active:visited {
+    color : #f1c40f;
+}
+
+
+
+/* contents */
+div .contents{
+    margin : 0 auto;
+}
+
+footer {
+    color : white;
+    background-color : #8e44ad;
+    text-align : center;
+    padding : 10px;
+    
+    font-size: 1em;
+    font-family : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

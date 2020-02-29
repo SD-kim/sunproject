@@ -1,0 +1,19 @@
+html, body {
+    margin : 0;
+    box-sizing : 0;
+}
+
+header{
+    background-color: pink;
+    padding : 1em;
+}
+
+.contents{
+    background-color: blue;
+    padding : 2em;
+}
+
+footer {
+    background-color: red ;
+    padding: 1em;
+}

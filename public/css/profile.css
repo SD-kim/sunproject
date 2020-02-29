@@ -1,0 +1,36 @@
+div .contents{
+    margin : 1em auto;
+    max-width : 30%;
+    font-size : 1.5em;
+}
+
+#item1 {
+    color : black;
+    padding : 2em 0;
+}
+
+#item2 {
+    color : black;
+}
+
+#img-wrapper{
+    text-align : center;
+}
+
+#img-wrapper img{
+    border : 1px black solid ;
+    border-radius : 40%;
+    
+    padding : 0.1em;
+    height : 300px;
+}
+
+#profile-letter{
+    font-weight: bold;
+    color : #2c3e50;
+}
+
+label {
+    font-size : 1em;
+    line-height: 2em;
+}
