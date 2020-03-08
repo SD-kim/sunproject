@@ -1,0 +1,34 @@
+div .contents{
+  color: black;
+  background-color: #ecf0f1;
+
+  padding: 1em;
+}
+
+.post{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  margin-bottom: 1em;;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.description span{
+  color : black;
+  font-size : small;
+  cursor: pointer;
+}
+
+#more > a{
+  color : black;
+}
+
+#date{
+  float : right;
+}

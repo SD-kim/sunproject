@@ -2,64 +2,142 @@
 div .contents {
     /* grid! */
     display : grid;
-    grid-gap : 1em;
-    grid-template-columns : 70% 30%;
-    margin-top : 1em;
+    padding: 1em;
 }
 
-/* header : 네비게이션과 본문 간격을 위한 조치 */
-header {
-    margin-bottom: 20px;
-}
-
-/* main */
-.main {
-    background-color :#ecf0f1;
-}
-    section .article {
-        padding: 1em;
-        background-color : white;
+    /* main */
+    .main {
+        background-color :#ecf0f1;
     }
-    /* grid container - 만들면서 구체화 시킬 것 */
-    section .drawing{
-        display : grid;
-        grid-gap : 1em;
-        grid-template-columns : 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        background-color: white;
-        margin-top : 1em;
+        /* grid container */
+        section .article {
+            display : grid;
+            gap : 0.5em;
+            background-color : white;
+        }
+            /* grid item  */
+            .article > div {
+                max-height: 20em;
+                border : 1px #bdc3c7 solid;
+
+                padding: 1em;
+                /* margin : 0.5em 0.5em; */
+            }
+
+            .article > div:hover {
+                opacity: 0.5;
+                transition: 0.1s;
+            }
+
+            .article h2{
+                text-indent: 0.2em;
+            }
+
+            .article p{
+                max-height: 12em;
+                overflow: hidden;
+            }
+
+
+        /* grid container - 만들면서 구체화 시킬 것 */
+        section .drawing{
+            display : grid;
+            grid-template-columns : 1fr 1fr 1fr;
+            grid-gap: 1em;
+            
+            background-color: white;
+            margin-top : 1em;
+            padding : 1em;
+        }
+            .drawing > div {
+                background-color: black;
+                align-self: start;
+            }
+
+            .drawing > div:hover{
+                opacity: 0.6;
+                transition: 0.2s;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit : cover;
+            }
+
+    /* side section */
+
+    aside {
         padding : 1em;
+        background-color : white;
+        line-height : 40px;
+        box-shadow: 1px 2px 5px black;
     }
-        .drawing > div {
-            background-color :#ecf0f1;
-            align-self: strech;
+        aside b{
+            font-size : 1.5em;
         }
 
-/* side section */
+        #instagram-embed{
+            width : 100%;
+            margin : 1em auto;
+        }
 
-aside {
-    padding : 1em;
-    background-color : white;
-    line-height : 40px;
+/* RESPONSIVE (mobile first) */
+
+/* mobile (0~690px) */
+@media only screen and (max-width : 690px){
+    div .contents{
+        display : block;
+
+        margin: 0 auto;
+        padding: 1em;
+    }
+    section .article{
+        grid-template-columns: 1fr;
+    }
 }
-    aside b{
-        font-size : 1.5em;
-    }
-
-    #instagram-embed{
-        width : 100%;
-        margin : 1em auto;
-    }
-
-    /* aside div {
-        background-color: white;
     
-    } */
+/* 691px 이상에 적용 */
+@media only screen and (min-width : 691px){
+    div .contents{
+        grid-template-columns: 70% 30%;
+        gap : 1em;
+    }
+    section .article {
+        grid-template-columns: 1fr 1fr;
+    }
+    .article > div {
+        color : white;
+        background-color: #2c3e50;
+        /* box-shadow: 0px 0px 0px black; */
+    }
+}
 
+/* 1000px 이하에서 aside가 아래로 + aside 내에서 column 2개로 변환 */
+@media only screen and (max-width: 1000px){
+    div .contents{
+        grid-template-columns: 1fr;
+    }
 
+    aside{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* margin: 1em; */
+    }
 
+    aside div{
+        padding : 2em;
+        justify-content: center;
+        align-self: center;
+    }
 
+    aside div:nth-child(2){
+        order: -1;
+    }
 
-/* div{
-    border : 1px solid #ccc
-} */
+    aside .contact-info {
+        text-align: center;
+
+    }
+}

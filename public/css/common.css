@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
+
 /* css initialize */
 html, body {
     margin : 0;
@@ -11,7 +13,8 @@ a {
     color : white;
 }
 header a {
-    font-size : 2em;
+    font-size : 1em;
+    font-family: 'Merriweather Sans';
     font-weight: 700;
     text-decoration : none;
 }
@@ -40,22 +43,59 @@ div .contents {
     color : #8e44ad;
 }
 
+/* header - hamburger */
+#hamburger{
+    display : none;
+    float : right;
+    line-height : 38px;
+    position : relative;
+    right : 10px;
+}
+
+#pop-up {
+    display: none;
+    background-color: #ffffff;
+    color: white;
+    position: absolute;
+    right: 0;
+    width: 33vw;
+}
+
+
+#pop-up div {
+    display : flex;
+    flex-direction : column;
+    text-align : center;
+}
+
+#pop-up a {
+    background-color : #8e44ad;
+    padding : 1.2em;
+    text-decoration : none;
+}
+
+#pop-up a:hover {
+    background-color : white;
+    color: #8e44ad
+}
+
 /* header - navigation */
 .nav-flex-container {
     display : flex;
+    /* flex-direction : row; */
     justify-content: center;
     flex-wrap : wrap;
 }
 
 nav{
     text-align: center;
-    padding: 1em;
+    padding: 0;
     background-color: #8e44ad;
 }
 
 nav > a {
-    padding: 0.1em 0.5em;
-    margin : 1em;
+    padding: 0.2em;
+    margin: 0.5em 1em;
 
     /* font settings */
     color: white;
@@ -72,29 +112,30 @@ nav a:visited {
 }
 
 nav a:hover{
-    color : #95a5a6;
+    background-color : #9b59b6;
+    color : #ecf0f1;
 }
 
 a .active:visited {
     color : #ecf0f1;
 }
 
-/* 설명이 필요한 부분 */
+
 .active{
     font-weight : 900;
+    /* position:  */
 }
 
 .active:visited {
     color : #f1c40f;
 }
 
-
-
 /* contents */
 div .contents{
     margin : 0 auto;
 }
 
+/* footer */
 footer {
     color : white;
     background-color : #8e44ad;
@@ -104,3 +145,67 @@ footer {
     font-size: 1em;
     font-family : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
+#home {
+    color : white;
+    text-shadow: 2px 4px 3px black;
+    display : none;
+    position : fixed;
+    right: 15px;
+    bottom: 25px;
+}
+
+.appear {
+    display: block !important;
+}
+
+
+/* smartphone ~ 690 */
+@media only screen and (max-width : 690px){
+    #hamburger {
+        display : block;
+    }
+
+    .logo {
+        background-color: #8e44ad;
+        padding : 1em;
+        font-size : 2em;
+    }
+
+    .logo a {
+        color : white;
+    }
+
+    nav {
+        display : none !important;
+    }
+
+    div .contents {
+        max-width : 100%;
+        font-size : 11px;
+    }
+
+    footer {
+        text-align : center;
+        padding : 1.2em;
+        font-size : 1em;
+    }
+
+    #since {
+        display : none;
+    }
+}
+
+/* tablet + desktop () ~  */
+@media only screen and (min-width : 691px){
+    #pop-up {
+        display: none !important;
+    }
+}
+
+/* //only desktop 760px ~
+@media only screen and (min-width: 760px){
+    div .contents{
+        max-width: 100%;
+    }
+} */

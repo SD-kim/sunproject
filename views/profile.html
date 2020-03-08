@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>profile</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/profile.css">
-
-    <script src="http:" crossorigin="anonymous"></script>
+    <title>sustainable diary</title>
+    <link rel = "stylesheet" href = "../public/css/common.css">
+    <link rel = "stylesheet" href = "../public/css/profile.css">
+    
+    <!-- to use fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    
 </head>
 
 <body>
@@ -17,20 +19,33 @@
         <!-- 헤더 영역 -->
         <header>
             <div class="logo">
-                <a href="/">SUSTAINABLE DIARY</a>
-                <!-- <a href="/">
-                    <i class="fa fa-bars fa-lg" id = 'hanburger'></i>
-                </a> -->
-            </div>
-            
-            <nav class = 'nav-flex-container'>
-                <a href="/">home</a>
-                <a href="profile.html" class="active">profile</a>
-                <a href="project.html">project</a>
-                <a href="gallary.html">gallary</a>
-                <a href="diary.html" id = "diary">diary</a>
-                <a href="visitor.html">visitor</a>
-            </nav>
+                <!-- logo -->
+                <a href="./index.html" id = "logo">SUSTAINABLE DIARY</a>
+                <!-- hamburger icon -->
+                <a href="./index.html">
+                    <i class="fas fa-bars" id = "hamburger"></i>
+                </a>
+              </div>
+                     
+              <nav class ='nav-flex-container active'>
+                <a href="./index.html">home</a>
+                <a href="./profile.html">profile</a>
+                <a href="./project.html">project</a>
+                <a href="./gallery.html">gallery</a>
+                <a href="./diary.html">diary</a>
+                <a href="./visitor.html">visitor</a>
+              </nav>
+              
+              <div id = "pop-up">
+                <div>
+                    <a href="./index.html">home</a>
+                    <a href="./profile.html">profile</a>
+                    <a href="./project.html">project</a>
+                    <a href="./gallery.html">gallery</a>
+                    <a href="./diary.html">diary</a>
+                    <a href="./visitor.html">visitor</a>
+                </div>
+              </div>
         
         </header>
 
@@ -41,7 +56,7 @@
                 <div class="profile-info" id = "item1">
                     <!-- profile image -->
                     <div id="img-wrapper">
-                        <img src="../imgs/Side-view-of-David-Beckham-Hairstyles.jpg" alt="profile">
+                        <img src="../public/imgs/Side-view-of-David-Beckham-Hairstyles.jpg" alt="profile">
                     </div>
                     <br>
                     <!-- profile letter -->
@@ -53,7 +68,7 @@
                <!-- form -->
                <form class="input-form" action="" id="item2" >
                    <b>Contact</b>
-                   <br>
+                   <br><br>
                    <label for="name">이름</label><br>
                    <input type="text">
                    <br>
@@ -62,6 +77,8 @@
                    <br>
                    <label for="message">남기실 말</label><br>
                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                   <br>
+                   <input type="submit" value = "보내기">
                </form>
             </section>
         </div>
@@ -73,6 +90,6 @@
         </footer>
         </div>
     </div>
-    <script src = './public/js/common.js'></script>
+    <script src = '../public/js/common.js'></script>
 </body>
 </html>

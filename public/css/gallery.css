@@ -1,0 +1,37 @@
+div .contents{
+  color: white;
+  background-color : #ecf0f1;
+  box-shadow : 1px 1px 3px black;
+
+  padding : 0.5em;
+}
+
+.pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
+
+  padding:1em;
+
+}
+
+.pictures > div:hover{
+  opacity: 0.5;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* 690px 이하일 때 1단으로 변경 */
+@media only screen and (max-width: 690px){
+  div .contents{
+    background-color: #f1c40f;
+  }
+
+  .pictures{
+      grid-template-columns: 1fr;
+    }
+  };

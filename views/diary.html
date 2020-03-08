@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sustainable diary</title>
+    <link rel = "stylesheet" href = "../public/css/common.css">
+    <link rel = "stylesheet" href = "../public/css/diary.css">
+    
+    <!-- to use fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <!-- 일단은 div 태그로 감싸야 flex 적용이 가능하다 -->
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- logo -->
+                <a href="./index.html" id = "logo">SUSTAINABLE DIARY</a>
+                <!-- hamburger icon -->
+                <a href="./index.html">
+                    <i class="fas fa-bars" id = "hamburger"></i>
+                </a>
+              </div>
+                     
+              <nav class ='nav-flex-container active'>
+                <a href="./index.html">home</a>
+                <a href="./profile.html">profile</a>
+                <a href="./project.html">project</a>
+                <a href="./gallery.html">gallery</a>
+                <a href="./diary.html">diary</a>
+                <a href="./visitor.html">visitor</a>
+              </nav>
+              
+              <div id = "pop-up">
+                <div>
+                    <a href="./index.html">home</a>
+                    <a href="./profile.html">profile</a>
+                    <a href="./project.html">project</a>
+                    <a href="./gallery.html">gallery</a>
+                    <a href="./diary.html">diary</a>
+                    <a href="./visitor.html">visitor</a>
+                </div>
+              </div>
+        </header>
+
+        <div class="contents">
+            <sction class="main">
+                    <div class="post">
+                        <div class="img">
+                            <img src="../public/imgs/gallery1.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h2>첫 번째 글</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consectetur voluptates perspiciatis molestias et maiores pariatur dolorum aliquam vero earum, excepturi quae cumque quos, porro nesciunt quaerat quas provident obcaecati!</p>
+                            <span id = "more">
+                                <a href="">전체 글 보기</a>
+                            </span>
+                            <span id='date'>
+                                2020-03-02
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="img">
+                            <img src="../public/imgs/gallery2.jpeg" alt="">
+                        </div>
+                        <div class="description">
+                            <h2>두 번째 글</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consectetur voluptates perspiciatis molestias et maiores pariatur dolorum aliquam vero earum, excepturi quae cumque quos, porro nesciunt quaerat quas provident obcaecati!</p>
+                            <span id = "more">
+                                <a href="/">전체 글 보기</a>
+                            </span>
+                            <span id='date'>
+                                2020-03-02
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="img">
+                            <img src="../public/imgs/gallery3.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h2>세 번째 글</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consectetur voluptates perspiciatis molestias et maiores pariatur dolorum aliquam vero earum, excepturi quae cumque quos, porro nesciunt quaerat quas provident obcaecati!</p>
+                            <span id = "more">
+                                <a href="">전체 글 보기</a>
+                            </span>
+                            <span id='date'>
+                                2020-03-02
+                            </span>
+                        </div>
+                    </div>
+            </sction>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            SUSTAINABLE DIARY&copy;
+            <br>
+            <span id="since">SINCE 2017</span>
+            <i class="fas fa-arrow-circle-up fa-2x" id="home"></i>
+        </footer>
+        
+        <script src = './public/js/common.js'></script>
+    </div>
+</body>
+</html>

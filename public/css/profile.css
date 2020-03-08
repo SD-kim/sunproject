@@ -1,6 +1,6 @@
 div .contents{
     margin : 1em auto;
-    max-width : 30%;
+    max-width : 50%;
     font-size : 1.5em;
 }
 
@@ -11,6 +11,7 @@ div .contents{
 
 #item2 {
     color : black;
+    padding: 1px;
 }
 
 #img-wrapper{
@@ -32,5 +33,30 @@ div .contents{
 
 label {
     font-size : 1em;
-    line-height: 2em;
+    line-height: 1em;
+}
+
+input, textarea{
+    width: 100%;
+    padding : 10px;
+    margin : 5px 0 20px 0;
+    box-sizing: border-box;
+    border : 1px solid #ccc;
+    border-radius : 4px;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 10px 20px;
+    background-color : #8e44ad;
+    color: white;
+    font-size : 1em;
+}
+
+
+@media only screen and (max-width : 900px){
+    div .contents{
+        margin: 0 auto;
+        max-width: 70%;
+    }
 }
